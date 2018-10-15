@@ -12,16 +12,16 @@ git clone https://github.com/omnirom/android_bootable_recovery.git bootable/reco
 source build/envsetup.sh && lunch omni_rainbow_lite_4g-eng && make -j16 recoveryimage
 ```
 # Method to give stock recovery.img
-in shell adb -> Pass ```setprop persist.tinno.debug 1```
-(https://twitter.com/fs0c131y/status/938741187158183942)
-and go adb shell in root (su)
-make a dd command from recovery to sdcard
-use TWRPBuilder
-Compil
+in shell adb -> Pass ```setprop persist.tinno.debug 1```  
+(https://twitter.com/fs0c131y/status/938741187158183942)  
+and go adb shell in root (su)  
+make a dd command from recovery to sdcard  
+use TWRPBuilder  
+Compil  
 
 # Run custom recovery
-You CAN'T flash recovery on device because recovery partition is too small
-BUT you can boot on this rom.
--> Boot in fastboot mode
-and enter ```fastboot oem unlock-tinno``` to unlock fucking locking
-Enjoy with ```fastboot boot recovery.img```
+You CAN'T flash recovery on device because recovery partition is too small  
+BUT you can boot on this rom.  
+-> Boot in fastboot mode  
+and enter ```fastboot oem unlock-tinno``` to unlock fucking locking  
+Enjoy with ```fastboot boot recovery.img```  
